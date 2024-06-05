@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-titulo: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(#03A4FF, #042883, #021a58);
+}
+
+.cabecalho{
+    display: flex;
+    background-color: #004080;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em 0 0;
+}
+
+.titulo_cabecalho{
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.user{
+    height: 2em;
+    width: 2em;
+}
+
+.educacional{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 0.7em;
+}
+
+.menu{
+    margin: 0.3em 0 0 5%;
+}
+
+.titulo{
+    margin-left: 38%;
+    font-family: var(--font-titulo);
+    color: #1C2999;
+}
+
+.sec1{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.info{
+    font-family: var(--font-titulo);
+    color: antiquewhite;
+    background-color: #020824;
+    font-size: 30px ;
+    padding: 0.5em;
+    line-height: 1.2em;
+}
+
+.sec2{
+    padding: 2em 2em;
+    background-image: url(../img/image3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto1{
+    font-family: var(--font-titulo);
+    color: antiquewhite;
+    margin: 3em 0 1em 0;
+    width: 770px;
+    line-height: 140%;
+}
+
+.sec3{
+    margin: 1.5em;
+    padding: 1em 4em 1em 5em;
+    color: antiquewhite;
+    background-color: #004080;
+    text-align: center;
+}
+h3{
+    margin:auto;
+    font-family: var(--font-titulo);
+    text-align: center;
+    padding: 1em 0;
+    width: 575px;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.lista1{
+    font-family: var(--font-titulo);
+    margin: 1.5em;
+    text-align: left;
+}
+
+.lista2{
+    list-style: square;
+}
+
+.itens{
+    margin: 5em 0 1.3em 0;
+    font-weight: 700;
+}
+.itens2{
+    margin-bottom: 1em;
+    line-height: 150%;
+}
+
+.infoo{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.infografico{
+    height: 700px;
+    filter: brightness(1.2) contrast(1.1) saturate(1.2);
+    margin: auto;
+}
+
+.sec4{
+    margin: 0 4em 3em ;
+    
+}
+
+h4{
+    text-align: center;
+    margin: 7em 0 3em 0;
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    font-size: 24px;
+    color: antiquewhite;
+}
+.span1{
+    background: linear-gradient(to right, #99FFF9, #5C9995);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+.span2{
+    background: linear-gradient(to right, #0019FD, #3385FF);
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+.div1{
+    background: linear-gradient(to right, #99FFF9, #00747B);
+    width: 80%;
+    margin: 2em auto;
+    font-size: 16px;
+    padding: 1em;
+    border-radius: 20px;
+    font-family: var(--font-titulo);
+    line-height: 140%;
+}
+.div2{
+    background: linear-gradient(to right, #99FFF9, #00747B);
+    width: 30em;
+    margin: 2em auto 5em;
+    font-size: 16px;
+    padding: 1em;
+    border-radius: 20px;
+    font-family: var(--font-titulo);
+    line-height: 140%;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.conservacao{
+    font-family: var(--font-titulo);
+    background: linear-gradient(to right,  #99FFF9, #00747B);
+    margin: 2em 4em 2em 0;
+    padding: 1em;
+    border-radius: 20px;
+    line-height: 140%;
+}
+
+.economia{
+    font-family: var(--font-titulo);
+    color: aliceblue;
+    background: linear-gradient(#0019FD, #3385FF);
+    margin: 2em 4em 2em 0;
+    padding: 1em;
+    border-radius: 20px;
+    line-height: 140%;
+}
+.eco{
+    background: linear-gradient(#0019FD, #3385FF);
+    color: aliceblue;
+    margin-bottom: 6em;
+}
+
+.quiz{
+    text-align: center;
+    font-family: var(--font-titulo);
+    color: aliceblue;
+    font-size: 24px;
+    width: 30em;
+    margin: 4em auto;
+    padding: 2em 0;
+}
+
+.link_quiz{
+    text-align: center;
+}
+
+.botao{
+    font-family: var(--font-titulo);
+    color: rgb(9, 0, 87);
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 1em 5em;
+    border-radius: 10px;
+}
+
+.botao:active{
+    background-color: #0370dd;
+    color:aliceblue;
+    border: inset black 2px ;
+}
+
+.rodape{
+    margin-top: 7em;
+    padding-top: 1em;
+    background-color: #ffffff;
+    font-family: var(--font-titulo);
+    color: #000000;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 1.4em;
+}
+
+@media screen and (max-width: 1076px) {
+    .sec1{
+        background-color: #020824;
+        display: flex;
+        flex-direction: column;
+        padding: 2em 2em 0 2em;
+    }
+    .poster{
+        margin: auto;
+        width: fit-content;
+        height: 30em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .texto1{
+        width: 92%;
+    }
+
+    .info{
+        font-size: 20px;
+    }
+
+    .div1{
+        font-size: 14px;
+    }
+
+    .sec4{
+        font-size: 14px;
+    }
+
+    .quiz{
+        font-size: 16px;
+    }
+
+    .infografico{
+        width: 50%;
+        height: 50%;
+    }
+
+    h3{
+        margin: auto;
+        font-size: 20px;
+    }
+    .sec3{
+        padding: 0;    
+    }
+}
+
+@media screen and (max-width: 768px){
+    .poster{
+        height: 20em;
+    }
+    
+    .lista1{
+        margin: 0 5em;
+    }
+    .cards{
+        font-size: 12px;
+    }
+
+    .div2{
+        font-size: 12px;
+    }
+
+    .infografico{
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 624px){
+    .titulo{
+        margin-left: 29%;
+    }
+    .sec1{
+        padding: 1em 0 0 0  ;
+    }
+    .info{
+        padding-left: 1em;
+        font-size: 16px;
+    }
+
+    .video{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    h3{
+        width: 19em;
+    }
+
+    .div1{
+        font-size: 10px;
+
+    }
+
+    .conservacao{
+        height: fit-content;
+        font-size: 10px;
+    }
+
+    .video{
+        width: 29em;
+        height: 17em;
+    }
+}
+
+@media screen and (max-width: 542px){
+    .titulo_cabecalho{
+        font-size: 20px;
+    }
+
+    .text_item{
+        font-size: 12px;
+    }
+
+    .quiz{
+        font-size: 13px;
+    }
+
+    .botao{
+        font-size: 10px;
+    }
+
+    .infografico{
+        width: 25em;
+
+    }
+}
+
+@media screen and (max-width: 507px){
+    .video{
+        width: 20em;
+        height: 10em;
+    }
+
+    .poster{
+        width: 19em;
+        height: 12em;
+    }
+
+    .conservacao{
+        font-size: 9px;
+    }
+
+    .economia{
+        font-size: 9px;
+    }
+
+    .div2{
+        font-size: 10px;
+    }
+
+    .info{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    h3{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 19px;
+    }
+
+    .titulo_cabecalho{
+        font-size: 15px;
+    }
+
+    .itens{
+        font-size: 13px;
+    }
+
+    .quiz{
+        font-size: 10px;
+    }
+
+    .conservacao, .div2{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .titulo_cabecalho{
+        font-size: 13px;
+    }
+
+    .infografico{
+        width: 20em;
+    }
+
+    .logo{
+        width: 80px;
+    }
+
+    .rodape{
+        font-size: 13px;
+    }
+
+    .insta{
+        width: 24px;
+        margin-left: 1em;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .texto1{
+        font-size: 13px;
+    }
+
+    .lista1{
+        margin: 0 1.5em;
+    }
+
+    .sec4{
+        margin: 0 1em;
+    }
+
+    .video{
+        width: 15em;
+        height: 7.5em;
+    }
+
+    .info{
+        font-size: 10px;
+    }
+
+    .texto1{
+        font-size: 10px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    .itens{
+        font-size: 10px;
+    }
+
+    .text_item{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .infografico{
+        width: 15em;
+    }
+
+    .quiz{
+        font-size: 8px;
+    }
+
+    .botao{
+        font-size: 7px;
+    }
+}
