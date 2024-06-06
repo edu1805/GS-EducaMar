@@ -9,9 +9,15 @@
     padding: 0;
 }
 
-body{
+/* body{
     background-image: url('../img/imagem2_fundo.png');
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;    
+} */
+main{
+    background-image: url('../img/imagem2_fundo.png');
+    padding-bottom: 2em;
     background-size: cover;
     background-repeat: no-repeat;   
 }
@@ -113,8 +119,9 @@ hr{
     background-color: #004080;
     display: flex;
     flex-direction: column;
-    width: 25em;
+    width: fit-content;
     margin: auto;
+    margin-bottom: 2em;
 }
 
 .texto_msg{
@@ -141,20 +148,22 @@ hr{
     padding: 1em;
     max-height: 4em;
     max-width: 371px;
+    min-width: fit-content;
+    min-height: fit-content;
     border: solid 1px black;
     border-radius: 5px;
     margin-bottom: 3em;
 }
 
 .btn{
-    background-color: #2E4374;
+    background-color: #1d48ad;
     color: antiquewhite;
     padding: 1em;
-    border-radius: 19px;
+    border-radius: 15px;
 }
 
 .rodape{
-    margin-top: 2em;
+    margin-top: 0em;
     padding-top: 1em;
     background-color: #ffffff;
     font-family: var(--font-titulo);
@@ -165,4 +174,170 @@ hr{
     justify-content: center;
     font-size: 20px;
     padding-bottom: 1.4em;
+}
+
+@media screen and (max-width: 1321px){
+    .sec1{
+        width: fit-content;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .texto{
+        line-height: 140%;
+        font-size: 16px;
+    }
+
+    .contato{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 940px){
+    h1{
+        font-size: 40px;
+    }
+
+    .subtitulo{
+        font-size: 19px;
+    }
+
+    .texto{
+        font-size: 12px;
+    }
+
+    .botao{
+        width: 25em;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 674px){
+    .links{
+        font-size: 14px;
+    }
+
+    .titulo_cabecalho{
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .sec1{
+        width: 30em;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .titulo_cabecalho{
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 5em;
+    }
+
+    .contato{
+        width: 20em;
+    }
+
+    .texto_msg{
+        font-size: 20px;
+    }
+
+    #nome{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 521px){
+    .sec1{
+        width: 28em;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .subtitulo{
+        font-size: 16px;
+    }
+    .botao{
+        width: fit-content;
+        padding: 0.5em 1em;
+    }
+
+    .rodape{
+        font-size: 16px;
+    }
+
+    .insta{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 483px){
+    .titulo_cabecalho{
+        font-size: 16px;
+    }
+
+    .links{
+        padding: 2em 0;
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .sec1{
+        width: 20em;
+    }
+
+    .texto{
+        font-size: 10px;
+    }
+
+    .botao{
+        font-size: 9px;
+    }
+
+    .contato{
+        width: 20em;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 407px){
+    .contato{
+        width: 15em;
+    }
+
+    .texto_msg{
+        font-size: 12px;
+    }
+
+    .label{
+        font-size: 10px;
+    }
+
+    #nome, #msg{
+        font-size: 9px;
+        max-width: 240px;
+    }
+}
+
+@media screen and (max-width: 395px){
+    .titulo_cabecalho{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 60px;
+    }
 }
