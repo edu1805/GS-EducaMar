@@ -314,6 +314,14 @@ h4{
     .infografico{
         width: 30em;
     }
+
+    .titulo_cabecalho{
+        font-size: 25px;
+    }
+
+    .logo{
+        width: 5em;
+    }
 }
 
 @media screen and (max-width: 624px){
@@ -490,6 +498,14 @@ h4{
 
     .text_item{
         font-size: 9px;
+    }
+
+    .titulo_cabecalho{
+        font-size: 11px;
+    }
+
+    .logo{
+        width: 70px;
     }
 }
 

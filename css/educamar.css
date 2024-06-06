@@ -341,3 +341,17 @@ hr{
         width: 60px;
     }
 }
+
+@media screen and (max-width: 320px){
+    .links{
+        font-size: 9px;
+    }
+
+    .sec1{
+        width: 17em;
+    }
+
+    .cabecalho{
+        padding-right: 0.3em;
+    }
+}
