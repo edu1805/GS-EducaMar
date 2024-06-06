@@ -167,3 +167,169 @@ h4{
         margin: auto;
     }
 }
+
+@media screen and (max-width: 750px){
+    .texto1, .texto2{
+        font-size: 14px;
+    }
+
+    h4{
+        font-size: 34px;
+    }
+
+    .video{
+        width: 500px;
+    }
+
+    .lista{
+        padding: 2em 2em 4em 2em;
+    }    
+}
+
+@media screen and (max-width: 654px){
+    .div1{
+        width: fit-content;
+    }
+
+    .texto2{
+        width: 33em;
+    }
+
+    .lista{
+        padding: 2em 0em 4em 2em;
+    }
+
+    h4{
+        font-size: 30px;
+    }
+
+    .itens{
+        font-size: 14px;
+        width: 40em;
+    }
+
+}
+
+@media screen and (max-width: 622px){
+    .titulo_cabecalho{
+        font-size: 20px;
+    }
+
+    .titulo{
+        margin-left: 30%;
+    }
+    .imagem{
+        width: 20em;
+    }
+
+    .video{
+        width: 24em;
+        height: 14em;
+    }
+
+    h4{
+        font-size: 25px;
+    }
+
+    .texto1, .texto2{
+        font-size: 13px;
+    }
+
+    .lista{
+        width: fit-content;
+    }
+
+    .itens{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .titulo_cabecalho{
+        font-size: 14px;
+    }
+
+    .subtitulo{
+        font-size: 15px;
+    }
+
+    .texto2{
+        width: 26em;
+    }
+
+    .itens{
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .video{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .texto2{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 404px){
+
+    .titulo_cabecalho{
+        font-size: 12px;
+    }
+
+    .titulo{
+        margin-left: 22%;
+    }
+
+    .sec1{
+        padding: 2em 1em;
+    }
+
+    .imagem{
+        width: 18em;
+    }
+
+    .sec2{
+        padding: 2em 1em;
+    }
+
+    h4{
+        font-size: 17px;
+    }
+
+    .itens, .texto1, .texto2{
+        font-size: 10px;
+        line-height: 150%;
+    }
+
+    .itens{
+        width: 30em;
+    }
+
+    .rodape{
+        font-size: 14px;
+        .insta{
+            width: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 344px){
+    .cabecalho{
+        padding-right: 1em;
+    }
+
+    .logo{
+        width: 70px;
+    }
+
+    .itens{
+        width: 27em;
+    }
+
+    .video{
+        width: 16em;
+    }
+}
