@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: fit-content;
+}
+
+main{
+    font-family: var(--fonte);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9em;
+    height: fit-content;
+}
+
+h1{
+    color: #00ADD0;
+    margin-bottom: 0.4em;
+}
+
+.texto{
+    margin-bottom: 2.5em;
+}
+
+section{
+    width: 30em;
+    height: fit-content;
+}
+
+.label{
+    margin-bottom: 0.5em;
+}
+
+#nome{
+    width: 33em;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: #00ADD0 solid 1px;
+}
+
+#email{
+    width: 33em;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: #00ADD0 solid 1px;
+}
+
+#senha{
+    width: 33em;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: #00ADD0 solid 1px;
+}
+
+button{
+    width: 35em;
+    padding: 1em;
+    background-color: #0077B6;
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 529px) {
+
+    main{
+        margin-top: 3em;
+    }
+    .texto{
+        font-size: 14px;
+        width: fit-content;
+    }
+
+    section{
+        margin: auto;
+    }
+
+    .label{
+        margin-left: 3em;
+    }
+
+    #nome, #email, #senha{
+        width: 25em;
+        margin-left: 3em;
+    }
+
+    button{
+        width: 27em;
+        margin-left: 3em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        margin-top: 3em;
+        width: fit-content;
+    }
+
+    .texto{
+        font-size: 12px;
+    }
+
+    .div1, .div2, .div3{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .texto{
+        margin-right: 3em;
+    }
+    #nome, #email, #senha{
+        width: 23em;
+    }
+
+    button{
+        width: 25em;
+    }
+
+    .label{
+        font-size: 12px;
+        margin-left: 3.6em;
+    }
+}
