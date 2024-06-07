@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Economia Azul e Conservação Marinha</h1>
+        <div class="quiz-question">
+            <p>Qual é a principal causa da morte das tartarugas marinhas?</p>
+            <button onclick="checkAnswer(this)" data-correct="false">Poluição por plástico</button>
+            <button onclick="checkAnswer(this)" data-correct="true">Pesca Acidental</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Perda de habitat</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Mudanças climáticas</button>
+        </div>
+        <div class="quiz-question">
+            <p>Qual porcentagem do oxigênio que respiramos é produzida pelo oceano?</p>
+            <button onclick="checkAnswer(this)" data-correct="true">50%</button>
+            <button onclick="checkAnswer(this)" data-correct="false">20%</button>
+            <button onclick="checkAnswer(this)" data-correct="false">35%</button>
+            <button onclick="checkAnswer(this)" data-correct="false">70%</button>
+        </div>
+        <div class="quiz-question">
+            <p>O que é uma área marinha protegida?</p>
+            <button onclick="checkAnswer(this)" data-correct="false">Uma zona onde a pesca é proibida</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Uma área dedicada exclusivamente ao turismo</button>
+            <button onclick="checkAnswer(this)" data-correct="true">Uma região do oceano onde a biodiversidade é preservada através de regulamentações</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Um local destinado à extração de recursos minerais</button>
+        </div>
+        <div class="quiz-question">                         <!--questao 4 -->
+            <p>Qual dos seguintes é um exemplo de prática de pesca sustentável?</p>
+            <button onclick="checkAnswer(this)" data-correct="false">Uso de redes de arrasto de fundo</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Pesca de arrasto</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Uso de linha e redes de cerco</button>
+            <button onclick="checkAnswer(this)" data-correct="true">Uso de linha e anzol seletivos</button>
+        </div>
+
+        <div class="quiz-question">                         <!--questao 5 -->
+            <p>O que é o 'Great Pacific Garbage Patch'</p>
+            <button onclick="checkAnswer(this)" data-correct="false">Uma ilha de resíduos orgânicos no Pacífico</button>
+            <button onclick="checkAnswer(this)" data-correct="true">Uma grande área de concentração de plástico e lixo flutuante no Oceano Pacífico</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Um local de grande tráfego de navios comerciais</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Uma zona de pesca sustentável no Oceano Pacífico</button>
+        </div>
+
+        <div class="quiz-question">                         <!--questao 6 -->
+            <p>O que é economia azul?</p>
+            <button onclick="checkAnswer(this)" data-correct="true">Uso de recursos oceânicos para crescimento econômico sustentável e preservação ambiental</button>
+            <button onclick="checkAnswer(this)" data-correct="false">"A economia baseada exclusivamente na pesca</button>
+            <button onclick="checkAnswer(this)" data-correct="false">O desenvolvimento do comércio de mercadorias entre países por via marítima</button>
+            <button onclick="checkAnswer(this)" data-correct="false">A exploração e desenvolvimento de petróleo e gás no mar</button>
+        </div>
+        
+        <div class="quiz-question">                         <!--questao 7 -->
+            <p>Qual das seguintes opções é uma fonte de energia renovável marinha?</p>
+            <button onclick="checkAnswer(this)" data-correct="false">Carvão</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Energia solar</button>
+            <button onclick="checkAnswer(this)" data-correct="true">Energia das ondas</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Petróleo</button>
+        </div>
+        
+        <div class="quiz-question">                         <!--questao 8 -->
+            <p>Qual é um dos principais objetivos da economia azul?</p>
+            <button onclick="checkAnswer(this)" data-correct="false">Maximizar a extração de recursos marinhos sem considerar o impacto ambiental</button>
+            <button onclick="checkAnswer(this)" data-correct="true">Promover o desenvolvimento econômico ao mesmo tempo que se preserva a saúde dos ecossistemas marinhos</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Aumentar o turismo nas áreas costeiras, independentemente dos impactos que podem ser causados</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Explorar recursos minerais submarinos de forma intensiva e consciente</button>
+        </div>
+        
+        <div class="quiz-question">                         <!--questao 9 -->
+            <p>O que é a aquicultura sustentável?</p>
+            <button onclick="checkAnswer(this)" data-correct="true">Cultivo de organismos marinhos com práticas que não esgotam os recursos naturais e minimizam os impactos ambientais</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Criação intensiva de peixes em tanques sem controle ambiental</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Pesca em larga escala em zonas protegidas</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Uso de organismos geneticamente modificados para aumentar a produção</button>
+        </div>
+        
+        <div class="quiz-question">                         <!--questao 10 -->
+            <p>Como o turismo sustentável pode beneficiar a economia azul?</p>
+            <button onclick="checkAnswer(this)" data-correct="true">Ao atrair mais turistas e aumentar a pressão sobre recursos naturais</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Ao permitir o desenvolvimento de resorts e infraestruturas em áreas costeiras</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Ao encorajar a pesca em áreas de turismo popularPesca em larga escala em zonas protegidas</button>
+            <button onclick="checkAnswer(this)" data-correct="false">Ao gerar receita enquanto promove a conservação dos ecossistemas marinhos e educa os turistas sobre práticas sustentáveis</button>
+        </div>
+
+        <div class="result-container">
+            <p id="result"></p>
+        </div>
+        <div class="botao">
+            <a href="../paginas/educacional.html" class="link">Voltar</a>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
