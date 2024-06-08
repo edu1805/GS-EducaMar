@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../img/logo (1).png">
+    <link rel="stylesheet" href="../css/relatar.css">
+    <title>Relatar incidente</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="/img/logo (1).png" alt="logo" class="logo">
+        <h2 class="titulo_cabecalho">Unidos pela vida dos oceanos</h2>
+        <a href="/paginas/login.html" target="_blank" class="user">Login</a>
+        <a href="/paginas/cadastro.html" target="_blank" class="user">Cadastro</a>
+    </header>
+    <section class="educacional">
+        <nav class="menu">
+            <input type="checkbox" class="menu-faketrigger">
+            <div class="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="../index.html">Página Principal</a></li>
+                <li><a href="../paginas/colaborativa.html">Colaborativa</a></li>
+                <li><a href="../paginas/turismo.html">Turismo</a></li>
+                <li><a href="../paginas/educacional.html">Educacional</a></li>
+            </ul>
+        </nav>
+        <p class="titulo">Relatar Incidentes</p>
+    </section>
+
+    <main>
+        <p class="texto">Bem-vindo à nossa plataforma de relato de incidentes marinhos. Esta sessão é destinada a relatar e documentar quaisquer incidentes que ocorram em ambientes marinhos, contribuindo para a segurança, preservação ambiental e melhoria contínua das operações marítimas. Seu relato é fundamental para garantir a segurança de todos e a proteção dos ecossistemas marinhos.</p>
+    </main>
+
+
+
+
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "a900eaf2-9a16-438b-aec6-b19885c28fc3", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "be0981d1-7e5f-4b85-978d-e9792df83dea", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>

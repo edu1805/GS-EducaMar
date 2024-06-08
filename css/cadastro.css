@@ -18,7 +18,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 9em;
+    margin-top: 3em;
     height: fit-content;
 }
 
@@ -64,10 +64,23 @@ section{
 button{
     width: 35em;
     padding: 1em;
+    margin-bottom: 1.5em;
     background-color: #0077B6;
     color: antiquewhite;
     border: none;
     cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    color: #00ADD0;
+    padding: 0.7em 6.9em;
+    border: #00ADD0 solid 1px;
+}
+
+.link:hover{
+    background-color:#0077B6;
+    color: antiquewhite;
 }
 
 @media screen and (max-width: 529px) {
@@ -97,6 +110,13 @@ button{
         width: 27em;
         margin-left: 3em;
     }
+        
+    .link{
+        font-size: 14px;
+        padding: 0.5em 6.1em 0.5em 4em;
+        margin-left: 3em;
+    }
+
 }
 
 @media screen and (max-width: 480px){
@@ -130,5 +150,9 @@ button{
     .label{
         font-size: 12px;
         margin-left: 3.6em;
+    }
+
+    .link{
+        padding: 0.5em 4.3em 0.5em 4em;
     }
 }

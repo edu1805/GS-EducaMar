@@ -38,8 +38,7 @@ main{
 }
 
 .user{
-    height: 2em;
-    width: 2em;
+    color: antiquewhite;
 }
 a{
     text-decoration: none;
@@ -196,6 +195,10 @@ hr{
 }
 
 @media screen and (max-width: 940px){
+
+    .titulo_cabecalho{
+        font-size: 16px;
+    }
     h1{
         font-size: 40px;
     }
@@ -212,15 +215,20 @@ hr{
         width: 25em;
         font-size: 12px;
     }
+
+    .user{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 674px){
+
     .links{
         font-size: 14px;
     }
 
     .titulo_cabecalho{
-        font-size: 25px;
+        font-size: 14px;
     }
 
     h1{
@@ -256,6 +264,10 @@ hr{
 }
 
 @media screen and (max-width: 521px){
+
+    .titulo_cabecalho{
+        font-size: 12px;
+    }
     .sec1{
         width: 28em;
     }
@@ -283,7 +295,7 @@ hr{
 
 @media screen and (max-width: 483px){
     .titulo_cabecalho{
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .links{
@@ -310,6 +322,14 @@ hr{
     .contato{
         width: 20em;
         margin: auto;
+    }
+
+    .user{
+        font-size: 10px;
+    }
+
+    .logo{
+        width: 70px;
     }
 }
 

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-titulo: "Montserrat", sans-serif;
+    --cor-fundo: #004080;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(#03A4FF, #042883, #021a58);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: #004080;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em 0 0;
+}
+
+.titulo_cabecalho{
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.user{
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: var(--font-titulo);
+}
+
+.educacional{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 0.7em;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu .menu-lines, .menu input{
+    display: none;
+} 
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    font-size: 1.5rem;
+    color: #cdcdcd;
+}
+.menu ul li a:hover{
+    background-color: #cdcdcd;
+    color: #222;
+}
+
+.titulo{
+    margin-left: 45%;
+    font-family: var(--font-titulo);
+    font-size: 20px;
+    color: #1C2999;
+}
+
+main{
+    font-family: var(--font-titulo);
+    color: #ffffff;
+    width: 40%;
+    margin: 3em auto;
+    background: linear-gradient(#021a58, #042883, #03A4FF);
+    border-radius: 10px;
+}
+
+
+.texto{
+    margin-top: 5em;
+    padding: 2em;
+}   
+
+
+@media screen and (max-width: 743px){
+    .titulo_cabecalho{
+        font-size: 16px;
+    }
+
+    .user{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 70px;
+    }
+
+    .titulo{
+        margin-left: 35%;
+    }
+
+}
+
+@media screen and (max-width: 457px){
+    .titulo_cabecalho{
+        font-size: 10px;
+    }
+
+    .user{
+        font-size: 10px;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    .titulo{
+        font-size: 14px;
+        margin-left: 34%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 2000px){
+    /*  Menu Hamburguer*/ 
+    
+    .menu{
+        padding: 15px;
+        min-height: 30px;
+    }
+
+    .menu .menu-faketrigger{
+        position: absolute;
+        z-index: 1000;
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+        cursor:pointer;
+        color: #000000;
+    }
+
+.menu .menu-lines{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menu input{
+    display: block;
+}
+
+.menu .menu-lines span{
+    display:block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 8px;
+    background-color: #080808;
+    border-radius: 3px;
+    transition: all ease .2s;
+
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span{
+    background-color: #222;
+    
+}
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+
+}
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
+    opacity: 0;
+
+}
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu ul{
+    display: block;
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 250px;
+    padding-top: 80px;
+    background-color: #c7cddf;
+    margin-left: -300px;
+    transition: all ease .2s;
+}
+
+.menu .menu-faketrigger:checked ~ ul{
+    margin-left: 0;
+}
+
+.menu ul li{
+    padding: 5px;
+    font-family: var(--font-titulo);
+}
+
+.menu ul li a{    
+    color: #222;
+    font-size: 22px;
+    margin: 0;
+    transition: all ease .3s;
+}
+
+.menu ul li a:hover {
+    color: #ffffff;
+    background-color: #6b97cf;
+
+}
+}

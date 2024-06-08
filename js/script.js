@@ -20,3 +20,24 @@ function checkAnswer(button) {
         document.getElementById('result').innerText = `Você acertou ${score} de ${totalQuestions} perguntas.`;
     }
 }
+
+
+const botao1 = document.getElementById('btn')
+const botao2 = document.getElementById('btn2')
+
+
+botao1.addEventListener('click', function(){
+    alert("Login feito com sucesso!")
+})
+
+
+botao2.addEventListener('click', function(){
+    alert("Cadastro feito com sucesso!")
+})
+
+
+
+
+document.getElementById("Enviar").addEventListener("click", function() {
+    alert("Sua solicitação foi recebida");
+});

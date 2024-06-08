@@ -30,8 +30,9 @@ body{
 }
 
 .user{
-    height: 2em;
-    width: 2em;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: var(--font-titulo);
 }
 
 .educacional{
@@ -349,6 +350,10 @@ h4{
 }
 
 @media screen and (max-width: 624px){
+
+    .cabecalho{
+        padding-right: 1em;
+    }
     .titulo{
         margin-left: 29%;
     }
@@ -362,6 +367,10 @@ h4{
 
     .video{
         width: 500px;
+    }
+
+    .user{
+        font-size: 10px;
     }
 }
 
@@ -534,6 +543,9 @@ h4{
 }
 
 @media screen and (max-width: 320px){
+    .cabecalho{
+        padding-right: 0;
+    }
     .infografico{
         width: 15em;
     }
